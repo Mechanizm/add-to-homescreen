@@ -1,5 +1,5 @@
 /* Add to Homescreen v3.2.2 ~ (c) 2015 Matteo Spinelli ~ @license: http://cubiq.org/license */
-(function (window, document) {
+module.exports = function () {
 /*
        _   _ _____     _____
  ___ _| |_| |_   _|___|  |  |___ _____ ___ ___ ___ ___ ___ ___ ___
@@ -730,6 +730,7 @@ function _removeToken () {
 }
 
 // expose to the world
-window.addToHomescreen = ath;
+//window.addToHomescreen = ath;
 
-})(window, document);
+return ath;
+}

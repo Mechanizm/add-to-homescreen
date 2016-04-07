@@ -6,7 +6,7 @@
 	|__,|___|___| |_| |___|__|__|___|_|_|_|___|___|___|_| |___|___|_|_|
 	by Matteo Spinelli ~ http://cubiq.org
 	*/
-module.exports = function () {
+module.exports = (function () {
 
 		// Check for addEventListener browser support (prevent errors in IE<9)
 		var _eventListener = 'addEventListener' in window;
@@ -712,8 +712,5 @@ module.exports = function () {
 						history.replaceState('', window.document.title, document.location.href.replace(_reQueryString, '$2'));
 				}
 		}
-
-		// expose to the world
-		//window.addToHomescreen = ath;
 		return ath
-}
+})()

@@ -1,25 +1,12 @@
-(function (root, factory) {
-		if (typeof define === 'function' && define.amd) {
-				// AMD. Register as an anonymous module.
-				define([], factory);
-		} else if (typeof exports === 'object') {
-				// Node. Does not work with strict CommonJS, but
-				// only CommonJS-like enviroments that support module.exports,
-				// like Node.
-				module.exports = factory();
-		} else {
-				// Browser globals (root is window)
-				root.returnExports = factory();
-		}
-}(this, function () {
-		/* Add to Homescreen v3.2.2 ~ (c) 2015 Matteo Spinelli ~ @license: http://cubiq.org/license */
-		/*
-			_   _ _____     _____
-			___ _| |_| |_   _|___|  |  |___ _____ ___ ___ ___ ___ ___ ___ ___
-			| .'| . | . | | | | . |     | . |     | -_|_ -|  _|  _| -_| -_|   |
-			|__,|___|___| |_| |___|__|__|___|_|_|_|___|___|___|_| |___|___|_|_|
-			by Matteo Spinelli ~ http://cubiq.org
-			*/
+/* Add to Homescreen v3.2.2 ~ (c) 2015 Matteo Spinelli ~ @license: http://cubiq.org/license */
+/*
+	_   _ _____     _____
+	___ _| |_| |_   _|___|  |  |___ _____ ___ ___ ___ ___ ___ ___ ___
+	| .'| . | . | | | | . |     | . |     | -_|_ -|  _|  _| -_| -_|   |
+	|__,|___|___| |_| |___|__|__|___|_|_|_|___|___|___|_| |___|___|_|_|
+	by Matteo Spinelli ~ http://cubiq.org
+	*/
+module.exports = function () {
 
 		// Check for addEventListener browser support (prevent errors in IE<9)
 		var _eventListener = 'addEventListener' in window;
@@ -729,4 +716,4 @@
 		// expose to the world
 		//window.addToHomescreen = ath;
 		return ath
-}));
+}

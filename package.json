@@ -1,0 +1,22 @@
+{
+  "name": "add-home-to-screen",
+  "description": "Script for mobile devices, it automatically shows an overlaying message encouraging to add the web app to the homescreen. Compatible with iOS 6+ and Chrome for Android (soon WinPhone).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mechanizm/add-to-homescreen.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mechanizm/add-to-homescreen/issues"
+  },
+  "homepage": "https://github.com/Mechanizm/add-to-homescreen#readme"
+  "files": [
+    "index.css",
+    "index.js"
+  ]
+}

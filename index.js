@@ -452,6 +452,7 @@ module.exports = (function () {
 						}
 
 						this.shown = true;
+      ath.shown = true;
 
 						// increment the display count
 						this.session.lastDisplayTime = now;

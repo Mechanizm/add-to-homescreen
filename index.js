@@ -218,6 +218,8 @@ module.exports = (function () {
 				// class methods
 				this.doLog = ath.doLog;
 
+    ath.remove = this.remove.bind(this)
+
 				// merge default options with user config
 				this.options = _extend({}, ath.defaults);
 				_extend(this.options, options);
